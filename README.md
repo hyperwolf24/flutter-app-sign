@@ -85,7 +85,7 @@ App bundle
 flutter build appbundle --release
 ```
 
-(The ```bash flutter build``` command defaults to --release.)
+(The ```flutter build``` command defaults to --release.)
 
 ## Updating the app’s version number
 
