@@ -87,7 +87,7 @@ flutter build appbundle --release
 
 (The ```flutter build``` command defaults to --release.)
 
-## Updating the app’s version number
+# Updating the app’s version number
 
 The default version number of the app is 1.0.0. To update it, navigate to the pubspec.yaml file and update the following line:
 
@@ -101,6 +101,6 @@ In Android, build-name is used as versionName while build-number used as version
 
 When you rebuild the app for Android, any updates in the version number from the pubspec file will update the versionName and versionCode in the local.properties file.
 
-### Important Note related to App versioning
+## Important Note related to App versioning
 
 Once a build is uploaded to playstore no going back even for unreleased builds. Subsequent build uploads ask you to go a version higher.
