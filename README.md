@@ -4,15 +4,15 @@
 
 Mac / Linux
 
-``bash
+```bash
 keytool -genkey -v -keystore ~/upload-keystore.jks -keyalg RSA -keysize 2048 -validity 10000 -alias upload
-``
+```
 
 Windows
 
-``bash
+```bash
 keytool -genkey -v -keystore %userprofile%\upload-keystore.jks -storetype JKS -keyalg RSA -keysize 2048 -validity 10000 -alias upload
-``
+```
 
 Note: The keytool command might not be in your path—it’s part of Java, which is installed as part of Android Studio.
 For the concrete path, run flutter doctor -v and locate the path printed after ‘Java binary at:’.
@@ -24,12 +24,12 @@ For example, on Mac/Linux use Program\ Files, and on Windows use "Program Files"
 
 Create a file named [project]/android/key.properties that contains a reference to your keystore.
 
-``bash
+```bash
 storePassword=<password-from-previous-step>
 keyPassword=<password-from-previous-step>
 keyAlias=upload
 storeFile=<keystore-file-location>
-``
+```
 
 Don’t include the angle brackets (< >).
 
